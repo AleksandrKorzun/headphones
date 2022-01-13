@@ -1,0 +1,36 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    display: block;
+    margin-right: 10px;
+    padding: 12px;
+    color: $color_icon;
+    background-color: $primary-background;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color $animation, background-color $animation;
+
+    &:hover,
+    &:focus {
+      background-color: $color_accent;
+      color: $color_secondary;
+    }
+  }
+  &__icon {
+    text-align: center;
+    fill: currentColor;
+  }
+  // &__btn:hover,
+  // &__btn:focus {
+  //   background-color: $color_accent;
+  //   color: $color_secondary;
+  // }
+}

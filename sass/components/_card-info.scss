@@ -1,0 +1,71 @@
+.infoCard-textItem{
+    display: flex;
+}
+.icon-checkmark{
+    fill: green;
+    margin-right: 5px;
+}
+
+.infoCard-image{
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+.infoCard-title{
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 119%;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    text-align: center
+}
+.infoCard-text{
+    @extend %text;
+    font-size: 14px;
+    line-height: 1.19;
+    margin-bottom: 16px;
+}
+.infoCard-priceWrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: $desktop) {
+        flex-direction: row;
+    }
+    // padding: 0 15px;
+}
+.infoCard-textPrice{
+    @extend %text;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px; 
+    line-height: 1.19;
+    margin-bottom: 10px;
+    @media (min-width: $desktop) {
+        margin-bottom: 0;
+    }
+}
+.infoCard-textPrice span {
+    color: crimson;
+}
+.infoCard-btn{
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    color: ghostwhite;
+    background-color: firebrick;
+    font-size: 14px;
+    line-height: 1.63;
+    text-align: center;
+    cursor: pointer;
+    transition: color $animation, background-color $animation;
+
+    &:hover,
+    &:focus {
+    //   background-color: $color-accent;
+      color: grey;
+    }
+}

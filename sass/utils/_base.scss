@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+button {
+  padding: 0;
+}
+svg {
+  display: block;
+}
+img {
+  display: block;
+}
+a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $color-primary;
+  text-decoration: none;
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}

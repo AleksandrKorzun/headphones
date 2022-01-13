@@ -1,0 +1,146 @@
+.block-form {
+  font-family: Roboto, sans-serif;
+  padding: 40px;
+  margin: auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &__title {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    @media (min-width: $desktop) {
+      line-height: 1.15;
+    }
+  }
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    position: relative;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $color_text;
+    margin-bottom: 10px;
+  }
+  &__text {
+    display: block;
+    margin-bottom: 4px;
+  }
+  &__input {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 11px 41px;
+
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+
+    transition: border $animation;
+  }
+  &__icon {
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+    transition: fill $animation;
+  }
+  &__label:focus-within &__icon {
+    fill: $color-accent;
+  }
+
+  &__label:focus-within &__input {
+    border: 1px solid $color-accent;
+  }
+  &__label--area:focus-within &__input--area {
+    border: 1px solid $color-accent;
+  }
+}
+
+.contact-form {
+  &__label--area {
+    @extend .contact-form__label;
+    margin-bottom: 20px;
+  }
+  &__input--area {
+    width: 100%;
+    padding: 11px 15px;
+    resize: none;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+  &__label--area:focus-within &__input--area {
+    outline: none;
+    border: 1px solid $color-accent;
+    // border-color: $color-accent;
+  }
+  &__label--agreement {
+    @extend .contact-form__label;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    // padding: 0 15px;
+  }
+  &__input--checkbox {
+    position: absolute;
+    appearance: none;
+  }
+
+  &__input--checkbox:checked + .checkbox {
+    background-color: $color-accent;
+    background-image: url('../images/svg/iconcheck.svg');
+    background-size: contain;
+    background-origin: border-box;
+    border-color: $color-accent;
+  }
+  &__text--agreement {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    margin-left: 8px;
+    @media (min-width: $desktop) {
+      font-family: Roboto, sans-serif;
+
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  &__text--agreement-accent {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    color: $color-accent;
+  }
+}
+.checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $color-primary;
+  border-radius: 2px;
+  @media (min-width: $desktop) {
+    margin-left: 12px;
+  }
+}
+.modal-btn {
+  @extend .hero-section__btn;
+  margin: auto;
+}

@@ -1,0 +1,108 @@
+.hero-section {
+  @extend %section;
+  text-align: center;
+  min-width: 320px;
+  max-width: 1600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/mob/backgroundmob.png');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/mob/backgroundmob@2x.png');
+  }
+  @media (min-width: $tablet) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/tab/backgroundtab.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/tab/backgroundtab@2x.png');
+    }
+  }
+  @media (min-width: $desktop) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/desktop/6.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/desktop/background@2x.png');
+    }
+  }
+
+  &__block {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @media (min-width: $desktop) {
+      padding: 106px 237px 106px 237px;
+    }
+  }
+  &__title {
+    margin: 0 auto 30px;
+    text-align: center;
+    width: 360px;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 162%;
+    color: $color_secondary;
+    text-transform: uppercase;
+    @media (max-width: $mobile) {
+      width: auto;
+    }
+    @media (min-width: $desktop) {
+      font-size: 44px;
+      line-height: 137%;
+      margin: 0 0 30px;
+      width: auto;
+    }
+  }
+  &__btn {
+    background-color: $color-accent;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    color: $color-secondary;
+    width: 200px;
+    border: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 32px;
+  }
+}

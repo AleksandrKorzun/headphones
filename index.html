@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="page-header">
+        <div class="container container-flex">
+            <a class="logo" href="./index.html" lang="en">BT<span class="logo__header">Shop</span></a>
+            <button class="menu-toggle js-open-menu">
+                <svg class="menu-toggle__icon" width="24" height="16">
+                    <use href="./images/icons.svg#menu_24px"></use>
+                </svg>
+            </button>
+            <nav class="site-nav">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link current" href="./index.html">Главная</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#info-section">Наушники</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#our-team-section">Вопрос-ответ</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#footer">Контакты</a>
+                    </li>
+                </ul>
+                
+            </nav>
+            <ul class="contact-nav">
+                <li class="contact-nav__item">
+                    <a class="contact-nav__link" href="mailto:btshopair@gmail.com">
+                        <svg class="contact-nav__icon" width="16px" height="12px">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        btshopair@gmail.com
+                    </a>
+                </li>
+                <li class="contact-nav__item">
+                    <a class="contact-nav__link" href="tel:+380660928369">
+                        <svg class="contact-nav__icon" width="10px" height="16px">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 066 092 83 69
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- главная страница -->
+    <main>
+        <!-- Hero -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-section__block">
+                    <h1 class="hero-section__title">Лучшие реплики по самой выгодной цене </h1>
+                    <button class="hero-section__btn" type="button" data-modal-open>Заказать</button>
+                </div>
+            </div>
+            
+        </section>
+        <!-- Наши преимущества -->
+        <section class="feature-section">
+            <div class="container">
+                <h2 hidden>Наши преимущества</h2>
+                <ul class="feature-list">
+                    <li class="feature-list__item">
+                        <div class="feature-list__icons">
+                            <svg class="feature-list__icon" width="70" height="70">
+                                <use href="./images/icons.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        
+                        
+                        <h3 class="feature-list__title">Совместимость с IOS и Android</h3>
+                        <p class="feature-list__text">Наши наушники отлично работают на всех устроствах с bluetooth на операционных системах IOS, Android и Windows.
+                        </p>
+                    </li>
+                    <li class="feature-list__item">
+                        <div class="feature-list__icons">
+                            <svg class="feature-list__icon" width="70" height="70">
+                                <use href="./images/icons.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        
+                        <h3 class="feature-list__title">Качественный объемный звук</h3>
+                        <p class="feature-list__text">Благодаря качественным динамикам и другим комплектующим, наушники имееют отличный, объемный звук с басами.
+                        </p>
+                    </li>
+                    <li class="feature-list__item">
+                        <div class="feature-list__icons">
+                            <svg class="feature-list__icon" width="70" height="70">
+                            <use href="./images/icons.svg#icon-diagram"></use>
+                        </svg>
+                        </div>
+                        
+                        <h3 class="feature-list__title">Настройка в одно касание</h3>
+                        <p class="feature-list__text">Настройка AirPods происходит в одно касание, достаточно просто открыть кейс и в всплывающем окне нажать "Подключить".
+                        </p>
+                    </li>
+                    <li class="feature-list__item">
+                        <div class="feature-list__icons">
+                             <svg class="feature-list__icon" width="70" height="70">
+                            <use href="./images/icons.svg#icon-astronaut"></use>
+                        </svg>
+                        </div>
+                        
+                        <h3 class="feature-list__title">Беспроводная зарядка</h3>
+                        <p class="feature-list__text">Заряжать Airpods очень просто, достаточно просто положить кейс на беспроводную ДОК станцию или подключить через порт Lightning</p>
+                    </li>
+                </ul>
+                <h2 class="feature-section__title">Заказать наушники очень просто !</h2>
+                <ul class="order-info__list">
+                    <li class="order-info__item">
+                        <p class="order-info__number"><span>1</span></p>
+                        <h3 class="order-info__title">Выбрать наушники</h3>
+                        <p class="order-info__text">Выберите подходящую для вас модель наушников</p>
+                        <svg class="icon icon-arrow-right" width="50" height="50"><use xlink:href="./images/icons.svg#icon-arrow-right"></use></svg>
+                    </li>
+                    <li class="order-info__item">
+                        <p class="order-info__number"><span>2</span></p>
+                        <h3 class="order-info__title">Оформить заказ</h3>
+                        <p class="order-info__text">Введите информацию об адресе доставки</p>
+                        <svg class="icon icon-arrow-right" width="50" height="50"><use xlink:href="./images/icons.svg#icon-arrow-right"></use></svg>
+                    </li>
+                    <li class="order-info__item">
+                        <p class="order-info__number"><span>3</span></p>
+                        <h3 class="order-info__title">Получить наушники</h3>
+                        <p class="order-info__text">Заберите наушники в отделении службы доставки</p>
+                    </li>
+                </ul>
+                <!-- <ul class="our-skills-list">
+                    <li class="our-skills-list__item">
+                        <img class="our-skills-list__image" src="./images/aboutus1.jpg" alt="Создание сайтов" width="370" height="294">
+                        <p class="our-skills-list__text">Десктопные приложения</p>
+                    </li>
+                    <li class="our-skills-list__item">
+                        <img class="our-skills-list__image" src="./images/aboutus2.jpg" alt="Разработка мобильных приложений" width="370" height="294">
+                        <p class="our-skills-list__text">Мобильные приложения</p>
+                    </li>
+                    <li class="our-skills-list__item">
+                        <img class="our-skills-list__image" src="./images/aboutus3.jpg" alt="Созданием дизайонв для сайтов и приложений" width="370" height="294">
+                        <p class="our-skills-list__text">Дизайнерские решения</p>
+                    </li>
+                </ul> -->
+            </div>
+            
+        </section>
+        <section class="info-section" id="info-section">
+            <div class="container">
+                <div class="info-section__btnWrapper">
+                    <ul class="infoBtn-list">
+                        <li class="infoBtn-item">
+                            <button type="button" class="infoBtn active" id="airPods2-btn">AirPods 2</button>
+                        </li>
+                        <li class="infoBtn-item">
+                            <button type="button" class="infoBtn" id="airPodsPro-btn">AirPods Pro</button>
+                        </li>
+                        <li class="infoBtn-item">
+                            <button type="button" class="infoBtn" id="airPods3-btn">AirPods 3</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-section__cardWrapper" id="airPods2">
+                    <div class="info-section__card--AirpodsTwo">
+                        <ul class="infoCard-list">
+                            <li class="infoCard-item">
+                                <h3 class="infoCard-title">Airpods 2</h3>
+                                <img src="./images/desktop/airpods-with-wireless-chargingcase-2.jpg" alt="" class="infoCard-image">
+                                <div class="infoCard-textWrapper">
+                                    <ul class="infoCard-textList">
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Функция POP-UP при подключении</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Сенсорное управление</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Объемный качественный звук с басами</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Время прослушивания до 4 часов</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Качество звука Hi-Fi без потерь</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Индикация батареи каждого элемента отдельно.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="infoCard-priceWrapper">
+                                    <p class="infoCard-textPrice">Цена: <span>600 грн</span></p>
+                                    <button class="infoCard-btn">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="infoCard-item">
+                                <h3 class="infoCard-title">Airpods 2</h3>
+                                <img src="./images/desktop/airpods-with-wireless-chargingcase-2.jpg" alt="" class="infoCard-image">
+                                <div class="infoCard-textWrapper">
+                                    <ul class="infoCard-textList">
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Функция POP-UP при подключении</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Сенсорное управление</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Объемный качественный звук с басами</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Время прослушивания до 4 часов</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Качество звука Hi-Fi без потерь</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Индикация батареи каждого элемента отдельно.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="infoCard-priceWrapper">
+                                    <p class="infoCard-textPrice">Цена: <span>750 грн</span></p>
+                                    <button class="infoCard-btn">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="infoCard-item">
+                                <h3 class="infoCard-title">Airpods 2</h3>
+                                <img src="./images/desktop/airpods-with-wireless-chargingcase-2.jpg" alt="" class="infoCard-image">
+                                <div class="infoCard-textWrapper">
+                                    <ul class="infoCard-textList">
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Функция POP-UP при подключении</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Сенсорное управление</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Объемный качественный звук с басами</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Время прослушивания до 4 часов</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Качество звука Hi-Fi без потерь</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Индикация батареи каждого элемента отдельно.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="infoCard-priceWrapper">
+                                    <p class="infoCard-textPrice">Цена: <span>900 грн</span></p>
+                                    <button class="infoCard-btn">Заказать</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-section__cardWrapper is-hidden" id="airPods-Pro">
+                    <div class="info-section__card--AirpodsTwo">
+                        <ul class="infoCard-list">
+                            <li class="infoCard-item">
+                                <h3 class="infoCard-title">Airpods Pro</h3>
+                                <img src="./images/desktop/airpods_pro.png" alt="" class="infoCard-image">
+                                <div class="infoCard-textWrapper">
+                                    <ul class="infoCard-textList">
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Функция POP-UP при подключении</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Сенсорное управление</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Объемный качественный звук с басами</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Время прослушивания до 4 часов</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Качество звука Hi-Fi без потерь</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Индикация батареи каждого элемента отдельно.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="infoCard-priceWrapper">
+                                    <p class="infoCard-textPrice">Цена: <span>600 грн</span></p>
+                                    <button class="infoCard-btn">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="infoCard-item">
+                                <h3 class="infoCard-title">Airpods Pro</h3>
+                                <img src="./images/desktop/airpods_pro.png" alt="" class="infoCard-image">
+                                <div class="infoCard-textWrapper">
+                                    <ul class="infoCard-textList">
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Функция POP-UP при подключении</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Сенсорное управление</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Объемный качественный звук с басами</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Время прослушивания до 4 часов</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Качество звука Hi-Fi без потерь</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Индикация батареи каждого элемента отдельно.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="infoCard-priceWrapper">
+                                    <p class="infoCard-textPrice">Цена: <span>750 грн</span></p>
+                                    <button class="infoCard-btn">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="infoCard-item">
+                                <h3 class="infoCard-title">Airpods Pro</h3>
+                                <img src="./images/desktop/airpods_pro.png" alt="" class="infoCard-image">
+                                <div class="infoCard-textWrapper">
+                                    <ul class="infoCard-textList">
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Функция POP-UP при подключении</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Сенсорное управление</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Объемный качественный звук с басами</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Время прослушивания до 4 часов</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Качество звука Hi-Fi без потерь</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Индикация батареи каждого элемента отдельно.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="infoCard-priceWrapper">
+                                    <p class="infoCard-textPrice">Цена: <span>900 грн</span></p>
+                                    <button class="infoCard-btn">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="infoCard-item">
+                                <h3 class="infoCard-title">Airpods Pro</h3>
+                                <img src="./images/desktop/airpods_pro.png" alt="" class="infoCard-image">
+                                <div class="infoCard-textWrapper">
+                                    <ul class="infoCard-textList">
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Функция POP-UP при подключении</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Сенсорное управление</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Объемный качественный звук с басами</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Время прослушивания до 4 часов</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Качество звука Hi-Fi без потерь</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Индикация батареи каждого элемента отдельно.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="infoCard-priceWrapper">
+                                    <p class="infoCard-textPrice">Цена: <span>900 грн</span></p>
+                                    <button class="infoCard-btn">Заказать</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-section__cardWrapper is-hidden" id="airPods3">
+                    <div class="info-section__card--AirpodsTwo">
+                        <ul class="infoCard-list">
+                            <li class="infoCard-item">
+                                <h3 class="infoCard-title">Airpods 3</h3>
+                                <img src="./images/desktop/airpods_3.jpg" alt="" class="infoCard-image">
+                                <div class="infoCard-textWrapper">
+                                    <ul class="infoCard-textList">
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Функция POP-UP при подключении</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Сенсорное управление</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Объемный качественный звук с басами</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Время прослушивания до 4 часов</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Качество звука Hi-Fi без потерь</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Индикация батареи каждого элемента отдельно.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="infoCard-priceWrapper">
+                                    <p class="infoCard-textPrice">Цена: <span>600 грн</span></p>
+                                    <button class="infoCard-btn">Заказать</button>
+                                </div>
+                            </li>
+                            <li class="infoCard-item">
+                                <h3 class="infoCard-title">Airpods 3</h3>
+                                <img src="./images/desktop/airpods_3.jpg" alt="" class="infoCard-image">
+                                <div class="infoCard-textWrapper">
+                                    <ul class="infoCard-textList">
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Функция POP-UP при подключении</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Сенсорное управление</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Объемный качественный звук с басами</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Время прослушивания до 4 часов</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Качество звука Hi-Fi без потерь</p>
+                                        </li>
+                                        <li class="infoCard-textItem">
+                                            <svg class="icon icon-checkmark" width="20" height="20">
+                                                <use xlink:href="./images/icons.svg#icon-checkmark"></use>
+                                            </svg>
+                                            <p class="infoCard-text">Индикация батареи каждого элемента отдельно.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="infoCard-priceWrapper">
+                                    <p class="infoCard-textPrice">Цена: <span>750 грн</span></p>
+                                    <button class="infoCard-btn">Заказать</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!-- наша команда -->
+        <section class="our-team-section" id="our-team-section">
+            <div class="container">
+                <h2 class="our-team-section__title">Вопрос - ответ</h2>
+                <ul class="accordion accordion-flush" id="accordionFlushExample">
+                    <li class="accordion-item">
+                      <h3 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h3>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </li>
+                    <li class="accordion-item">
+                      <h3 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h3>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </li>
+                    <li class="accordion-item">
+                      <h3 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h3>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </li>
+                    <li class="accordion-item">
+                      <h3 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h3>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </li>
+                    <li class="accordion-item">
+                      <h3 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h3>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </li>
+                  </ul>
+                <!-- <ul class="our-team-section__list">
+                    <li class="our-team-section__item">
+                        <div class="card-team">
+                            <picture>
+                                <source 
+                                    srcset="
+                                        ./images/desktop/ourteam1.jpg 1x, 
+                                        ./images/desktop/ourteam1@2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)">
+                                <source 
+                                    srcset="
+                                        ./images/tab/ourteam1tab.jpg 1x, 
+                                        ./images/tab/ourteam1tab@2x.jpg 2x
+                                    " 
+                                    media="(min-width: 768px)">
+                                <img class="card-team__image" 
+                                    srcset="
+                                        ./images/mob/ourteam1mob.jpg 1x,
+                                        ./images/mob/ourteam1mob@2x.jpg 2x
+                                        " 
+                                    src="./images/ourteam1mob.jpg" alt="Дизайнер">
+                            </picture>
+                            
+                            <h3 class="card-team__title">Игорь Демьяненко</h3>
+                            <p class="card-team__text">Product Designer</p>
+                            <ul class="social-links">
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </li>
+                    <li class="our-team-section__item">
+                        <div class="card-team">
+                            <picture>
+                                <source 
+                                    srcset="
+                                        ./images/desktop/ourteam2.jpg 1x, 
+                                        ./images/desktop/ourteam2@2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)">
+                                <source srcset="
+                                    ./images/tab/ourteam2tab.jpg 1x, 
+                                    ./images/tab/ourteam2tab@2x.jpg 2x
+                                    " media="(min-width: 768px)">
+                                <img class="card-team__image" srcset="
+                                    ./images/mob/ourteam2mob.jpg 1x,
+                                    ./images/mob/ourteam2mob@2x.jpg 2x
+                                    " 
+                                    src="./images/ourteam2.jpg" alt="Фронтенд разработчик">
+                            </picture>
+                            
+                            <h3 class="card-team__title">Ольга Репина</h3>
+                            <p class="card-team__text">Frontend Developer</p>
+                            <ul class="social-links">
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="our-team-section__item">
+                        <div class="card-team">
+                            <picture>
+                                <source 
+                                    srcset="
+                                        ./images/desktop/ourteam3.jpg 1x, 
+                                        ./images/desktop/ourteam3@2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)">
+                                <source srcset="
+                                    ./images/tab/ourteam3tab.jpg 1x, 
+                                    ./images/tab/ourteam3tab@2x.jpg 2x
+                                    " media="(min-width: 768px)">
+                                <img class="card-team__image" srcset="
+                                    ./images/mob/ourteam3mob.jpg 1x,
+                                    ./images/mob/ourteam3mob@2x.jpg 2x
+                                    " 
+                                    src="./images/ourteam3.jpg" alt="Маркетолог">
+                            </picture>
+                            <h3 class="card-team__title">Николай Тарасов</h3>
+                            <p class="card-team__text">Marketing</p>
+                            <ul class="social-links">
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="our-team-section__item">
+                        <div class="card-team">
+                            <picture>
+                                <source 
+                                    srcset="
+                                        ./images/desktop/ourteam4.jpg 1x, 
+                                        ./images/desktop/ourteam4@2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)">
+                                <source srcset="
+                                    ./images/tab/ourteam4tab.jpg 1x, 
+                                    ./images/tab/ourteam4tab@2x.jpg 2x
+                                    " media="(min-width: 768px)">
+                                <img class="card-team__image" srcset="
+                                    ./images/mob/ourteam4mob.jpg 1x,
+                                    ./images/mob/ourteam4mob@2x.jpg 2x
+                                    " 
+                                    src="./images/ourteam4.jpg" alt="Разработчик пользовательского интерфейса">
+                            </picture>
+                            
+                            <h3 class="card-team__title">Михаил Ермаков</h3>
+                            <p class="card-team__text">UI Designer</p>
+                            <ul class="social-links">
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="social-links_item">
+                                    <button class="social-links__btn">
+                                        <svg class="social-links__icon" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul> -->
+            </div>
+        </section>
+        <section class="our-benefits-section">
+            <div class="container">
+                <h2 class="our-benefits-section__title">Почему покупать у нас это выгодно ?</h2>
+                <ul class="our-benefits-section__list">
+                   <li class="our-benefits-section__items">
+                       <div class="wrapper-icon">
+                        <svg class="our-benefits-section__icon" width="48" height="48">
+                            <use xlink:href="./images/icons.svg#icon-fast-delivery1"></use>
+                        </svg>
+                       </div>
+                       <h3 class="our-benefits-section__subtitle">Быстрая Доставка</h3>
+                       <p class="our-benefits-section__text">Отправка в день заказа любым перевозчиком (Новая почта, Укрпочта, Meest, Justin). Возможен самовывоз в г. Киев</p>
+                   </li>
+                   <li class="our-benefits-section__items">
+                       <div class="wrapper-icon">
+                        <svg class="our-benefits-section__icon" width="48" height="48">
+                            <use xlink:href="./images/icons.svg#icon-discount1"></use>
+                        </svg>
+                       </div>
+                       <h3 class="our-benefits-section__subtitle">Лучшая цена</h3>
+                       <p class="our-benefits-section__text">Мы закупаем наушники напрямую у производителя и можем дать самую низкую цену на рынке.</p>
+                   </li>
+                   <li class="our-benefits-section__items">
+                       <div class="wrapper-icon">
+                        <svg class="our-benefits-section__icon" width="48" height="48">
+                            <use xlink:href="./images/icons.svg#icon-security"></use>
+                        </svg>
+                       </div>
+                       <h3 class="our-benefits-section__subtitle">Надежный поставщик</h3>
+                       <p class="our-benefits-section__text">Больше 2-х лет продаем наушники. Более 3000 довольных клиентов !</p>
+                   </li>
+                   <li class="our-benefits-section__items">
+                       <div class="wrapper-icon">
+                        <svg class="our-benefits-section__icon" width="48" height="48">
+                            <use xlink:href="./images/icons.svg#icon-refresh"></use>
+                        </svg>
+                       </div>
+                       <h3 class="our-benefits-section__subtitle">Возврат денег</h3>
+                       <p class="our-benefits-section__text">В течении 14 дней дней вернем деньги если что то не понравится !</p>
+                   </li>
+                   <li class="our-benefits-section__items">
+                       <div class="wrapper-icon">
+                        <svg class="our-benefits-section__icon" width="48" height="48">
+                            <use xlink:href="./images/icons.svg#icon-security"></use>
+                        </svg>
+                       </div>
+                       <h3 class="our-benefits-section__subtitle">Гарантия</h3>
+                       <p class="our-benefits-section__text">наш магазин дает гарантию 3 месяца на любую модель наушников !</p>
+                   </li>
+                   <li class="our-benefits-section__items">
+                       <div class="wrapper-icon">
+                        <svg class="our-benefits-section__icon" width="48" height="48">
+                            <use xlink:href="./images/icons.svg#icon-user-tie"></use>
+                        </svg>
+                       </div>
+                       <h3 class="our-benefits-section__subtitle">Эксперты в наушниках</h3>
+                       <p class="our-benefits-section__text">В любое время суток дадим качественную консультацию по выбору наушников !</p>
+                   </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- Футер -->
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer-contact">
+                <a class="footer-contact__logo" href="./index.html" lang="en">BT<span class="footer-contact__logo--footer">Shop</span></a>
+                <address class="footer-contact__wrapper">
+                    <p class="footer-contact__wrapper--address">г. Киев, ул. Здолбуновская, 13 </p>
+                    <a class="footer-contact__wrapper--mail" href="mailto:btshopair@gmail.com">btshopair@gmail.com</a>
+                    <a class="footer-contact__wrapper--tel" href="tel:+380961111111">+38 067 731 09 42</a>
+                    <a class="footer-contact__wrapper--tel" href="tel:+380660928369">+38 066 092 83 69</a>
+                </address>
+            </div>
+            <!-- <div class="footer-social-links">
+                <p class="footer-social-links__title">присоединяйтесь</p>
+                <ul class="footer-social-links__list">
+                    <li class="footer-social-links__item">
+                        <button class="footer-social-links__btn">
+                            <svg class="footer-social-links__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="footer-social-links__item">
+                        <button class="footer-social-links__btn">
+                            <svg class="footer-social-links__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="footer-social-links__item">
+                        <button class="footer-social-links__btn">
+                            <svg class="footer-social-links__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="footer-social-links__item">
+                        <button class="footer-social-links__btn">
+                            <svg class="footer-social-links__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div> -->
+            <form class="footer-form">
+                <label class="footer-form__label">
+                    <span class="footer-form__text">Подпишитесь на рассылку</span>
+                    <input type="text" name="subscribe" placeholder="E-mail" class="footer-form__input">
+                </label>
+                <button type="submit" class="footer-form__btn">
+                    <!-- <div class="footer-btn-icon"> -->
+                        <span class="footer-form__btn--text">Подписаться</span>
+                        <svg class="footer-form__icon" width="24" height="24">
+                            <use href="./images/icons.svg#iconsend"></use>
+                        </svg>
+                    <!-- </div> -->
+                    
+                </button>
+            </form>
+        </div>
+    </footer>
+    <!-- Мобильное меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="menu-toggle__icon" width="19" height="19">
+                <use href="./images/icons.svg#close_24px"></use>
+            </svg>
+        </button>
+        
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="./index.html" class="mobile-menu__link">Главная</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#info-section" class="mobile-menu__link">Наушники</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#our-team-section" class="mobile-menu__link">Вопрос-ответ</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#footer" class="mobile-menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <address class="contact-nav-mob">
+            <ul class="contact-nav-mob__list">
+                <li class="contact-nav-mob__item">
+                    <a class="contact-nav-mob__link--tel" href="tel:+380660928369">
+                        +38 066 092 83 69
+                    </a>
+                </li>
+                <li class="contact-nav-mob__item">
+                    <a class="contact-nav-mob__link--mail" href="mailto:btshopair@gmail.com">
+                        btshopair@gmail.com
+                    </a>
+                </li>
+            </ul>
+            <!-- <ul class="socials-links-mob__list">
+                <li class="socials-links-mob__item">
+                    <a href="" class="socials-links-mob__link">Instagram</a>
+                </li>
+                <li class="socials-links-mob__item">
+                    <a href="" class="socials-links-mob__link">Twitter</a>
+                </li>
+                <li class="socials-links-mob__item">
+                    <a href="" class="socials-links-mob__link">Facebook</a>
+                </li>
+                <li class="socials-links-mob__item">
+                    <a href="" class="socials-links-mob__link">LinkedIn</a>
+                </li>
+            </ul> -->
+        </address>
+        
+    </div>
+    <!-- модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal__close-btn" data-modal-close>
+                <svg class="modal__close-icon" width="11" height="11">
+                    <use href="./images/icons.svg#vector"></use>
+                </svg>
+            </button>
+            <div class="block-form">
+                <p class="block-form__title">Оставьте свои данные, мы вам перезвоним</p>
+                <form name="contact_form" class="contact-form">
+                    <label class="contact-form__label">
+                        <span class="contact-form__text">Имя</span>
+                        <svg class="contact-form__icon" width="14" height="14">
+                            <use href="./images/icons.svg#user-name"></use>
+                        </svg>
+                        <input type="text" name="name" class="contact-form__input">
+                    </label>
+                    <label class="contact-form__label">
+                        <span class="contact-form__text">Телефон</span>
+                        <svg class="contact-form__icon" width="13" height="13">
+                            <use href="./images/icons.svg#user-tel"></use>
+                        </svg>
+                        <input type="tel" name="phone_number" class="contact-form__input">
+         
+                    </label>
+                    <label class="contact-form__label">
+                        <span class="contact-form__text">Почта</span>
+                        <svg class="contact-form__icon" width="15" height="12">
+                            <use href="./images/icons.svg#user-email"></use>
+                        </svg>
+                        <input type="email" name="email" class="contact-form__input">
+                           
+                    </label>
+                    <label class="contact-form__label--area">
+                        <span class="contact-form__text">Комментарий</span>
+                         <textarea name="feedback" rows="7" placeholder="Введите текст" class="contact-form__input--area"></textarea>
+                                                
+                    </label>
+                    <label class="contact-form__label--agreement">
+                        <input type="checkbox" name="agreement" value="user_agreement" class="contact-form__input--checkbox" required />
+                        <span class="checkbox"></span>
+                        <span class="contact-form__text--agreement">Соглашаюсь с рассылкой и принимаю <a class="contact-form__text--agreement-accent" href="#">Условия договора</a></span>
+
+                    </label>
+                    <button type="submit" class="modal-btn">Отправить</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/info-card.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

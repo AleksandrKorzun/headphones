@@ -1,0 +1,125 @@
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 48px 40px;
+  background-color: $primary-background;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms $animation;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+.mobile-menu {
+  &__list {
+    margin-bottom: auto;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__link {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $color-primary;
+    transition: color $animation;
+    &:hover,
+    &:focus {
+      color: $color-accent;
+    }
+  }
+}
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  &__icon {
+    transition: fill $animation;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    fill: $color-accent;
+  }
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+.contact-nav-mob {
+  &__list {
+    margin-bottom: 64px;
+  }
+  &__item + &__item {
+    margin-top: 20px;
+  }
+  &__link--tel {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    color: $color-accent;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+  }
+  &__link--mail {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    color: $color-text;
+  }
+}
+.socials-links-mob {
+  &__list {
+    display: flex;
+    // flex-wrap: wrap;
+  }
+  &__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &__item:not(:first-child) {
+    padding-left: 10px;
+  }
+  &__link {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $color-accent;
+    @media (min-width: 420px) {
+      font-size: 18px;
+    }
+  }
+}

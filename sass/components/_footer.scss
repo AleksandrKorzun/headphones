@@ -1,0 +1,105 @@
+.footer {
+  text-align: center;
+  background-color: $footer-background;
+  @media (min-width: $desktop) {
+    text-align: start;
+  }
+  &__container {
+    @extend .container;
+    // text-align: center;
+    // display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+
+      justify-content: center;
+    }
+    // @media (min-width: $desktop) {
+    //   padding-bottom: 0;
+    // }
+  }
+}
+.footer-contact {
+  // margin-right: 70px;
+  @media (min-width: $tablet) {
+    margin-right: 165px;
+  }
+  @media (min-width: $desktop) {
+    margin-right: 70px;
+  }
+  &__logo {
+    @extend .logo;
+    line-height: 1.17;
+    padding: 0;
+
+    display: block;
+    margin-bottom: 20px;
+
+    @media (min-width: $desktop) {
+      font-size: 26px;
+      line-height: 1.2;
+    }
+  }
+
+  &__logo--footer {
+    color: $color-secondary;
+  }
+}
+.footer-contact__wrapper {
+  margin-bottom: 60px;
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+  &--address {
+    @extend %text;
+    line-height: 1.55;
+    color: $color-secondary;
+    margin-bottom: 8px;
+    @media (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
+  }
+  &--mail,
+  &--tel {
+    @extend %text;
+    display: block;
+    font-size: 14px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &--mail {
+    margin-bottom: 8px;
+    @media (min-width: $desktop) {
+      margin-bottom: 9px;
+    }
+  }
+}
+
+.footer-social-links {
+  @media (min-width: $desktop) {
+    margin-top: 12px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-secondary;
+  }
+  &__list {
+    @extend .social-links;
+    margin-bottom: 60px;
+    @media (min-width: $desktop) {
+      margin-bottom: 0;
+    }
+  }
+  &__btn {
+    @extend .social-links__btn;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $color-secondary;
+  }
+}
