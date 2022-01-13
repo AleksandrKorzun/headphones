@@ -42,7 +42,7 @@
     &__number span {
         display: inline-block;
         padding: 0 20px;
-        background-color: green;
+        background-color: $color-accent;
         border-radius: 50%;
     }
     &__title{
