@@ -1,4 +1,4 @@
-.modal {
+.modals {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6,7 +6,6 @@
 
   min-width: auto;
   min-height: auto;
-  // min-height: calc(100% - 188px);
   margin: auto;
 
   background-color: #fff;
@@ -16,19 +15,14 @@
 
   transition: transform $animation;
 
-  // @media (min-width: $tablet) {
-  //   min-width: calc(100% - 318px);
-  //   min-height: calc(100% - 416px);
-  // }
   @media (min-width: $mobile) {
     width: 450px;
-    // height: 581px;
   }
   @media (min-width: $desktop) {
     min-width: auto;
     min-height: auto;
     width: 528px;
-    // height: 581px;
+
   }
   &__close-btn {
     position: absolute;
