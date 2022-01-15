@@ -1090,10 +1090,11 @@
                 </svg>
             </button>
             <div class="block-form">
+                
                 <p class="block-form__title">Оставьте свои данные, мы вам перезвоним</p>
-                <form name="contact_form" class="contact-form" method="post" action="./php/send.php">
+                <form name="contact_form" class="contact-form">
                     <label class="contact-form__label">
-                        <span class="contact-form__text">Имя</span>
+                        <span class="contact-form__text">Имя Фамилия</span>
                         <svg class="contact-form__icon" width="14" height="14">
                             <use href="./images/icons.svg#user-name"></use>
                         </svg>
@@ -1105,29 +1106,70 @@
                             <use href="./images/icons.svg#user-tel"></use>
                         </svg>
                         <input type="tel" name="phone_number" class="contact-form__input">
-         
                     </label>
                     <label class="contact-form__label">
+                        <span class="contact-form__text">Служба доставки</span>
+                        <svg class="contact-form__icon" width="13" height="13">
+                            <use href="./images/icons.svg#user-tel"></use>
+                        </svg>
+                        <select class="contact-form__input" name="delivery_name" id="delivery_name">
+                            <option value=""></option>
+                            <option value="Новая Почта">Новая Почта</option>
+                            <option value="Justin">Justin</option>
+                            <option value="Укр почта">Укр почта</option>
+                        </select>
+                    </label>
+                    <label class="contact-form__label">
+                        <span class="contact-form__text">Город</span>
+                        <svg class="contact-form__icon" width="13" height="13">
+                            <use href="./images/icons.svg#user-tel"></use>
+                        </svg>
+                        <input type="text" name="city_name" class="contact-form__input">
+                    </label>
+                    <label class="contact-form__label">
+                        <span class="contact-form__text">Отделение</span>
+                        <svg class="contact-form__icon" width="13" height="13">
+                            <use href="./images/icons.svg#user-tel"></use>
+                        </svg>
+                        <input type="text" name="city_name" class="contact-form__input">
+                    </label>
+                    <label class="contact-form__label">
+                        <span class="contact-form__text">Выберите наушники</span>
+                        <svg class="contact-form__icon" width="13" height="13">
+                            <use href="./images/icons.svg#user-tel"></use>
+                        </svg>
+                        <select class="contact-form__input" name="headphones" id="headphones">
+                            <option value=""></option>
+                            <option value="AirPods 2 (Airoha AB1536U) ====> 600 грн">AirPods 2 (Airoha AB1536U) ====> 600 грн</option>
+                            <option value="AirPods 2 (Airoha AB1536U) ====> 750 грн">AirPods 2 (Airoha AB1536U) ====> 750 грн</option>
+                            <option value="AirPods 2 (Airoha AB1562M) ====> 900 грн">AirPods 2 (Airoha AB1562M) ====> 900 грн</option>
+                            <option value="AirPods Pro (Jerry 6936D) ====> 700 грн">AirPods Pro (Jerry 6936D) ====> 700 грн</option>
+                            <option value="AirPods Pro (Bluetrum BT8896A) ====> 900 грн">AirPods Pro (Bluetrum BT8896A) ====> 900 грн</option>
+                            <option value="AirPods Pro (Airoha 1562A) ====> 1100 грн">AirPods Pro (Airoha 1562A) ====> 1100 грн</option>
+                            <option value="AAirPods Pro (Airoha Bull 1562A) ====> 1300 грн<">AirPods Pro (Airoha Bull 1562A) ====> 1300 грн</option>
+                            <option value="AirPods 3 (Airoha 1536U) ====> 700 грн">AirPods 3 (Airoha 1536U) ====> 700 грн</option>
+                            <option value="AirPods 3 (Airoha 1535M) ====> 900 грн">AirPods 3 (Airoha 1535M) ====> 900 грн</option>
+                        </select>
+                    </label>
+                    <!-- <label class="contact-form__label">
                         <span class="contact-form__text">Почта</span>
                         <svg class="contact-form__icon" width="15" height="12">
                             <use href="./images/icons.svg#user-email"></use>
                         </svg>
                         <input type="email" name="email" class="contact-form__input">
                            
-                    </label>
-                    <label class="contact-form__label--area">
+                    </label> -->
+                    <!-- <label class="contact-form__label--area">
                         <span class="contact-form__text">Комментарий</span>
-                         <textarea name="feedback" rows="7" placeholder="Введите текст" class="contact-form__input--area"></textarea>
-                                                
-                    </label>
-                    <label class="contact-form__label--agreement">
+                         <textarea name="feedback" rows="7" placeholder="Введите текст" class="contact-form__input--area"></textarea>                     
+                    </label> -->
+                    <!-- <label class="contact-form__label--agreement">
                         <input type="checkbox" name="agreement" value="user_agreement" class="contact-form__input--checkbox" required />
                         <span class="checkbox"></span>
                         <span class="contact-form__text--agreement">Соглашаюсь с рассылкой и принимаю <a class="contact-form__text--agreement-accent" href="#">Условия договора</a></span>
 
-                    </label>
+                    </label> -->
                     <button type="submit" class="modal-btn">Отправить</button>
-                    <input type="hidden" name="act" value="order">
                 </form>
             </div>
             
@@ -1136,9 +1178,10 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/info-card.js"></script>
+    <script defer src="js/mobile-menu.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/info-card.js"type="module"></script>
+    <script src="./js/order.js"type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
