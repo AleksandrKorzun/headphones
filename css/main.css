@@ -346,7 +346,7 @@ a:hover, a:focus {
   margin-bottom: 10px;
 }
 
-.feature-list__text, .card-team__text, .infoCard-text, .infoCard-textPrice, .order-info__text, .footer-contact__wrapper--address, .footer-contact__wrapper--mail, .footer-contact__wrapper--tel, .footer-form__text, .footer-form__input, .footer-form__btn, .footer-form__btn--text {
+.feature-list__text, .card-team__text, .infoCard-text, .infoCard-textPrice, .order-info__text, .modal-footer-form__wrapper--text, .footer-contact__wrapper--address, .footer-contact__wrapper--mail, .footer-contact__wrapper--tel, .footer-form__text, .footer-form__input, .footer-form__btn, .footer-form__btn--text {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -669,9 +669,17 @@ a:hover, a:focus {
   }
 }
 
-@media (max-width: 1200px) {
+.feature-section__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
   .feature-section__title {
-    display: none;
+    font-size: 28px;
   }
 }
 
@@ -756,12 +764,12 @@ a:hover, a:focus {
   }
 }
 
-.feature-list__item:not(:last-child) {
+.feature-list__item {
   margin-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
-  .feature-list__item:not(:last-child) {
+  .feature-list__item {
     margin-bottom: 0;
   }
 }
@@ -1169,12 +1177,38 @@ a:hover, a:focus {
   border: 2px solid #f5f4fa;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  -webkit-animation: card 1s linear;
+          animation: card 1s linear;
 }
 
 .infoCard-item:hover, .infoCard-item:focus {
-  box-shadow: 0px 5px 10px 2px rgba(230, 122, 147, 0.75);
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(148, 98, 110, 0.75);
+  box-shadow: 0px 5px 10px 2px #2196f3;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(78, 96, 134, 0.75);
   -moz-box-shadow: 0px 5px 10px 2px rgbargba(148, 98, 110, 0.75);
+}
+
+@-webkit-keyframes card {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes card {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #airPods2 .infoCard-item {
@@ -1336,6 +1370,10 @@ a:hover, a:focus {
 
 .infoCard-btn:hover, .infoCard-btn:focus {
   color: grey;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: #2196f3;
 }
 
 .order-info__list {
@@ -1576,6 +1614,7 @@ a:hover, a:focus {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
+  z-index: 99;
   min-width: auto;
   min-height: auto;
   margin: auto;
@@ -1583,10 +1622,36 @@ a:hover, a:focus {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  -webkit-animation: modal 500ms linear;
+          animation: modal 500ms linear;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@-webkit-keyframes modal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 480px) {
@@ -1792,8 +1857,25 @@ a:hover, a:focus {
   }
 }
 
-.modal-btn {
-  margin: auto;
+.modal-footer-form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-footer-form__wrapper--text {
+  font-size: 18px;
+}
+
+.modal-footer-form__wrapper--text span {
+  color: crimson;
+  font-weight: bold;
 }
 
 .footer {

@@ -6,8 +6,15 @@
   }
 
   &__title {
-    @media (max-width: $desktop) {
-      display: none;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 1.17;
+      text-align: center;
+
+      margin-bottom: 50px;
+    @media (min-width: $tablet) {
+      font-size: 28px;
+      // display: none;
     }
     @media (min-width: $desktop) {
       font-weight: bold;
@@ -64,7 +71,7 @@
       padding-bottom: 94px;
     }
   }
-  &__item:not(:last-child) {
+  &__item {
     margin-bottom: 30px;
     @media (min-width: $desktop) {
       margin-bottom: 0;

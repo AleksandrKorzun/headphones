@@ -142,5 +142,18 @@
 }
 .modal-btn {
   @extend .hero-section__btn;
-  margin: auto;
+  // margin: auto;
+}
+.modal-footer-form__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &--text{
+    @extend %text;
+    font-size: 18px;
+  }
+  &--text span{
+    color: crimson;
+    font-weight: bold;
+  }
 }

@@ -69,3 +69,14 @@
       color: grey;
     }
 }
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: $color-accent;
+    // z-index: 1!important;
+}
+// span .carousel-control-prev-icon{
+//     z-index: 10;
+// }
+// span .carousel-control-next-icon{
+//     z-index: 10;
+// }
