@@ -36,10 +36,10 @@ function onHandleSubmit (e) {
     const model = `Модель: ${refs.orderForm[5].value}`
     const price = `Цена: ${refs.spanPrice.textContent}`
     
+    fetch(`https://api.telegram.org/bot5032458974:AAHLLeh-EuUpDd-BandAvRzU7DWoiZb2FkU/sendMessage?chat_id=1157878236&parse_mode=html&text=${name}%0A${tel}%0A${delName}%0A${city}%0A${department}%0A${model}%0A${price}`, {
+        method: 'POST'
+    });
     fetch(`https://api.telegram.org/bot5032458974:AAHLLeh-EuUpDd-BandAvRzU7DWoiZb2FkU/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${name}%0A${tel}%0A${delName}%0A${city}%0A${department}%0A${model}%0A${price}`, {
         method: 'POST'
     }).then(clearForm()).then(refs.modal.classList.add('is-hidden'));
-    // fetch(`https://api.telegram.org/bot5032458974:AAHLLeh-EuUpDd-BandAvRzU7DWoiZb2FkU/sendMessage?chat_id=1157878236&parse_mode=html&text=${name}%0A${tel}%0A${delName}%0A${city}%0A${department}%0A${model}`, {
-    //     method: 'POST'
-    // }).then(refs.modal.classList.add('is-hidden'));
 }
