@@ -65,7 +65,7 @@
             <div class="container">
                 <div class="hero-section__block">
                     <h1 class="hero-section__title">Лучшие реплики по самой выгодной цене </h1>
-                    <button type="button" class="btn btn-primary hero-section__btn" data-bs-toggle="modal" data-bs-target="#orderModal">
+                    <button type="button" class="btn-primary hero-section__btn" data-bs-toggle="modal" data-bs-target="#orderModal">
                         Заказать
                     </button>
                     <!-- <button class="hero-section__btn" type="button" data-modal-open>Заказать</button> -->
@@ -1150,96 +1150,14 @@
                     </div>
                     <div class="modal-footer-form__wrapper modal-footer">
                         <p class="modal-footer-form__wrapper--text">Цена: <span class="price">0</span> грн</p>
-                        <button type="submit" class="btn btn-primary modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Отправить</button>
-                        <!-- <button type="submit" class="modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Отправить</button> -->
+                        <button type="submit" class="btn-primary modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Отправить</button>
                     </div>
                 </form>
             </div>
-            <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div> -->
           </div>
         </div>
     </div>
-    <!-- <div class="backdrop is-hidden" data-modal>
-        <div class="modals">
-            <button class="modals__close-btn" data-modal-close>
-                <svg class="modals__close-icon" width="11" height="11">
-                    <use href="./images/icons.svg#vector"></use>
-                </svg>
-            </button>
-            <div class="block-form">
-                
-                <p class="block-form__title">Оставьте свои данные, мы вам перезвоним</p>
-                <form name="contact_form" class="contact-form">
-                    <label class="contact-form__label">
-                        <span class="contact-form__text">Имя Фамилия</span>
-                        <svg class="contact-form__icon" width="14" height="14">
-                            <use href="./images/icons.svg#user-name"></use>
-                        </svg>
-                        <input type="text" name="name" class="contact-form__input">
-                    </label>
-                    <label class="contact-form__label">
-                        <span class="contact-form__text">Телефон</span>
-                        <svg class="contact-form__icon" width="13" height="13">
-                            <use href="./images/icons.svg#user-tel"></use>
-                        </svg>
-                        <input type="tel" name="phone_number" class="contact-form__input">
-                    </label>
-                    <label class="contact-form__label">
-                        <span class="contact-form__text">Служба доставки</span>
-                        <svg class="contact-form__icon" width="13" height="13">
-                            <use href="./images/icons.svg#user-tel"></use>
-                        </svg>
-                        <select class="contact-form__input" name="delivery_name" id="delivery_name">
-                            <option value=""></option>
-                            <option value="Новая Почта">Новая Почта</option>
-                            <option value="Justin">Justin</option>
-                            <option value="Укр почта">Укр почта</option>
-                        </select>
-                    </label>
-                    <label class="contact-form__label">
-                        <span class="contact-form__text">Город</span>
-                        <svg class="contact-form__icon" width="13" height="13">
-                            <use href="./images/icons.svg#user-tel"></use>
-                        </svg>
-                        <input type="text" name="city_name" class="contact-form__input">
-                    </label>
-                    <label class="contact-form__label">
-                        <span class="contact-form__text">Отделение</span>
-                        <svg class="contact-form__icon" width="13" height="13">
-                            <use href="./images/icons.svg#user-tel"></use>
-                        </svg>
-                        <input type="text" name="city_name" class="contact-form__input">
-                    </label>
-                    <label class="contact-form__label">
-                        <span class="contact-form__text">Выберите наушники</span>
-                        <svg class="contact-form__icon" width="13" height="13">
-                            <use href="./images/icons.svg#user-tel"></use>
-                        </svg>
-                        <select class="contact-form__input" name="headphones" id="headphones">
-                            <option value=""></option>
-                            <option id="air2-1" data-price="600" value="AirPods 2 (Airoha AB1536U)>600">AirPods 2 (Airoha AB1536U)</option>
-                            <option id="air2-2" data-price="750"  value="AirPods 2 (Airoha AB1536U)>750">AirPods 2 (Airoha AB1536U)</option>
-                            <option id="air2-3" data-price="900"  value="AirPods 2 (Airoha AB1562M)>900">AirPods 2 (Airoha AB1562M)</option>
-                            <option id="airPro-1" data-price="750" value="AirPods Pro (Jerry 6936D)>750">AirPods Pro (Jerry 6936D)</option>
-                            <option id="airPro-2" data-price="900" value="AirPods Pro (Bluetrum BT8896A)>900">AirPods Pro (Bluetrum BT8896A)</option>
-                            <option id="airPro-3" data-price="1100" value="AirPods Pro (Airoha 1562A)>1100">AirPods Pro (Airoha 1562A)</option>
-                            <option id="airPro-4" data-price="1300" value="AAirPods Pro (Airoha Bull 1562A)>1300">AirPods Pro (Airoha Bull 1562A)</option>
-                            <option id="air3-1" data-price="700" value="AirPods 3 (Airoha 1536U)>700">AirPods 3 (Airoha 1536U)</option>
-                            <option id="air3-2" data-price="900" value="AirPods 3 (Airoha 1535M)>900">AirPods 3 (Airoha 1535M)</option>
-                        </select>
-                    </label>
-                    <div class="modal-footer-form__wrapper">
-                        <p class="modal-footer-form__wrapper--text">Цена: <span class="price">0</span> грн</p>
-                        <button type="submit" class="modal-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Отправить</button>
-                    </div>
-                </form>
-            </div>
-            
-        </div>
-    </div> -->
+    
     <!--Модалка после заказа-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -1252,20 +1170,66 @@
               <p>Спасибо за заказ, в ближайшее время с вами свяжется наш менеджер!</з>
             </div>
             <div class="modal-footer">
-              <!-- <button type="button" class="btn btn-secondary">Close</button> -->
               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Закрыть</button>
             </div>
           </div>
         </div>
     </div>
-    
+    <!--Chat modal-->
+    <div class="chatbot chatbot_hidden">
+        <div class="chatbot__title">
+          <span class="chatbot__close"></span>
+          "Chatbot"
+          <span class="chatbot__reset"></span>
+        </div>
+        <div class="chatbot__wrapper">
+          <ul class="chatbot__items">
+            <li class="chatbot__item chatbot__item_bot" data-botindex="0">
+              <span class="chatbot__content chatbot__content_bot">Привет</span>
+            </li>
+            <!-- <li class="chatbot__item chatbot__item_human">
+              <span class="chatbot__content chatbot__content_human-disabled">Привет</span>
+            </li> -->
+          </ul>
+        </div>
+        <form class="chatbot__footer" name="form">
+          <input class="chatbot__input" type="text" name="inputMessage"/>
+          <button
+            class="chatbot__submit"
+            type="submit"
+            name="sendMessage"
+          ></button>
+        </form>
+    </div>
+    <!-- Call me form-->
+    <div class="callFormWrapper call-me__hidden">
+        <form class="call-me__form">
+            <div class="call-me__inputWrapper" id="timer-1">
+                <label for="call_phone" class="form-label">
+                    <p class="contact-form__text" >Перезвоним вам через <span class="timer" data-value="secs">30</span> сек</p>
+                </label>
+                <input type="tel" name="call_phone" class="form-control" placeholder="0671234567" id="call_phone">
+            </div>
+            <button type="button" class="btn-close btn-close-callForm" aria-label="Close"></button>
+            <button type="button" class="btn btn-primary call-me__btnform">Перезвонить!</button>
+            
+        </form>
+    </div>
+    <button type="button" class="call-me__btn">
+        <svg class="icon icon-phone__callme" width="26" height="26">
+            <use xlink:href="./images/icons.svg#icon-phone"></use>
+        </svg>
+    </button>
+    <button type="button" class="chatbot__btn"></button>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script defer src="js/mobile-menu.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>
-    <script src="./js/info-card.js"type="module"></script>
-    <script src="./js/order.js"type="module"></script>
+    <script src="./js/info-card.js" type="module"></script>
+    <script src="./js/order.js" type="module"></script>
+    <script src="./js/chatbot.js" type="module"></script>
+    <script src="./js/callMe.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

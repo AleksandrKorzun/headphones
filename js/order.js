@@ -58,5 +58,5 @@ function onHandleSubmit (e) {
     // });
     fetch(`https://api.telegram.org/bot5032458974:AAHLLeh-EuUpDd-BandAvRzU7DWoiZb2FkU/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${name}%0A${tel}%0A${delName}%0A${city}%0A${department}%0A${model}%0A${price}`, {
         method: 'POST'
-    }).then(clearForm()).then(refs.modal.classList.add('is-hidden'));
+    }).then(clearForm()).then(console.log("done"));
 }
