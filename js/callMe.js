@@ -2,7 +2,9 @@ const refs = {
     callMeBtn: document.querySelector('.call-me__btn'),
     callblock: document.querySelector('.callFormWrapper'),
     callSendBtn: document.querySelector('.call-me__btnform'),
-    btnCloseCallForm: document.querySelector('.btn-close-callForm '),
+    btnCloseCallForm: document.querySelector('.btn-close-callForm'),
+    footerFormBtn: document.querySelector('.footer-form__btn'),
+    footerFormInput: document.querySelector('.footer-form__input')
     
 }
 const chat_id = 291340498;
@@ -36,6 +38,7 @@ const newTimer1 = new CountdownTimer({
 refs.callMeBtn.addEventListener('click', onToogleCallMeBtn);
 refs.callSendBtn.addEventListener('click', onSendPhone);
 refs.btnCloseCallForm.addEventListener('click', onCloseCallForm);
+refs.footerFormBtn.addEventListener('submit', onSendPhone)
 
 function onCloseCallForm(e){
     refs.callblock.classList.add('call-me__hidden');
@@ -48,12 +51,14 @@ function clearForm(){
 
 }
 function onSendPhone(e) {
+    e.preventDefault();
+    console.dir(e.currentTarget)
     const phoneClient = e.target.form.elements.call_phone.value;
     if (!phoneClient) return
-    fetch(`https://api.telegram.org/bot5032458974:AAHLLeh-EuUpDd-BandAvRzU7DWoiZb2FkU/sendMessage?chat_id=1157878236&parse_mode=html&text=${phoneClient}`, {
-        method: 'POST'
-    });
-    e.target.form.elements.call_phone.textContent = ""
+    // fetch(`https://api.telegram.org/bot5032458974:AAHLLeh-EuUpDd-BandAvRzU7DWoiZb2FkU/sendMessage?chat_id=1157878236&parse_mode=html&text=${phoneClient}`, {
+    //     method: 'POST'
+    // });
+    e.currentTarget.form.elements.call_phone.textContent = ""
     fetch(`https://api.telegram.org/bot5032458974:AAHLLeh-EuUpDd-BandAvRzU7DWoiZb2FkU/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${phoneClient}`, {
         method: 'POST'
     }).then(clearForm()).then(newTimer1.start());

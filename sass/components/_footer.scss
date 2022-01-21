@@ -7,24 +7,27 @@
   &__container {
     @extend .container;
     // text-align: center;
-    // display: flex;
+    display: flex;
+    flex-direction: column;
     padding-top: 60px;
     padding-bottom: 60px;
     @media (min-width: $tablet) {
-      display: flex;
-      flex-wrap: wrap;
+      // display: flex;
+      
 
       justify-content: center;
     }
-    // @media (min-width: $desktop) {
-    //   padding-bottom: 0;
-    // }
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      // flex-wrap: nowrap;
+      
+    }
   }
 }
 .footer-contact {
   // margin-right: 70px;
   @media (min-width: $tablet) {
-    margin-right: 165px;
+    // margin-right: 165px;
   }
   @media (min-width: $desktop) {
     margin-right: 70px;

@@ -17,7 +17,7 @@ const {
     depart_name,
     headphones,
 } = refs.orderForm.elements
-refs.btnSubmit.addEventListener('click', onHandleSubmit);
+refs.btnSubmit.addEventListener('submit', onHandleSubmit);
 refs.orderForm.headphones.addEventListener('change', onHandelChangePrice);
 refs.btnOrder.forEach(btn => {
     btn.addEventListener('click', onHandleClick)
@@ -44,7 +44,7 @@ function onHandleClick(e) {
 function onHandleSubmit (e) {
     e.preventDefault()
     
-    console.log(e.target.id)
+    
     const name = `ФИО: ${first_name.value} ${second_name.value}`
     const tel = `Тел: ${phone_number.value}`
     const delName = `СД: ${delivery_name.value}`
