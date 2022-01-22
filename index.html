@@ -1010,13 +1010,13 @@
                 </ul>
             </div> -->
             <form class="footer-form">
-                <label class="footer-form__label">
-                    <span class="footer-form__text">Перезвоним через 30 секунд !</span>
+                <label class="footer-form__label" id="timer-2">
+                    <span class="footer-form__text">Перезвоним через <span data-value="secs">30</span> секунд !</span>
                     <input type="text" name="call_phone" placeholder="0671231212" class="footer-form__input" required>
                 </label>
                 <button type="submit" class="footer-form__btn" >
                     <!-- <div class="footer-btn-icon"> -->
-                        <span class="footer-form__btn--text">Подписаться</span>
+                        <span class="footer-form__btn--text">Перезвонить</span>
                         <svg class="footer-form__icon" width="24" height="24">
                             <use href="./images/icons.svg#iconsend"></use>
                         </svg>
@@ -1090,7 +1090,7 @@
             </div>
             <div class="modal-body">
                 
-                <form name="contact_form needs-validation" class="row g-3 was-validated" novalidate>
+                <form name="contact_form" class="row g-3 was-validated">
                     <div class="col-md-6">
                         <label for="first_name" class="form-label">
                             <span class="contact-form__text">Имя</span>
@@ -1184,9 +1184,9 @@
         <form class="call-me__form">
             <div class="call-me__inputWrapper" id="timer-1">
                 <label for="call_phone" class="form-label">
-                    <p class="contact-form__text" >Перезвоним вам через <span class="timer" data-value="secs">30</span> сек</p>
+                    <p class="call-me__text" >Перезвоним вам через <span class="timer" data-value="secs">30</span> сек</p>
                 </label>
-                <input type="tel" name="call_phone" class="form-control" placeholder="0671234567" id="call_phone">
+                <input type="tel" name="call_phone" class="form-control" placeholder="0671234567" id="call_phone" required>
             </div>
             <button type="button" class="btn-close btn-close-callForm" aria-label="Close"></button>
             <button type="button" class="btn btn-primary call-me__btnform">Перезвонить!</button>

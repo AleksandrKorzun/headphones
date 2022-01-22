@@ -1,6 +1,7 @@
 const refs = {
     btnSubmit: document.querySelector('.modal-btn'),
     orderForm: document.forms.contact_form,
+    heroBtn: document.querySelector('.hero-section__btn'),
     btnOrder: document.querySelector('.infoCard-btn'),
     spanPrice: document.querySelector('.price'),
     btnOrder: document.querySelectorAll('.infoCard-btn'),
@@ -17,11 +18,12 @@ const {
     depart_name,
     headphones,
 } = refs.orderForm.elements
-refs.btnSubmit.addEventListener('submit', onHandleSubmit);
-refs.orderForm.headphones.addEventListener('change', onHandelChangePrice);
+refs.btnSubmit.addEventListener('click', onHandleSubmit);
+refs.orderForm.elements.headphones.addEventListener('change', onHandelChangePrice);
 refs.btnOrder.forEach(btn => {
     btn.addEventListener('click', onHandleClick)
-  })
+})
+
 
 function clearForm () {
     refs.orderForm.elements.first_name.value = "";
@@ -32,7 +34,7 @@ function clearForm () {
     refs.orderForm.elements.depart_name.value = "";
     refs.orderForm.elements.headphones.value = "";
     refs.spanPrice.textContent = "0";
-
+    
 }
 function onHandelChangePrice(e) {
     refs.spanPrice.textContent = e.target.value.split(">")[1];
@@ -43,7 +45,15 @@ function onHandleClick(e) {
 }
 function onHandleSubmit (e) {
     e.preventDefault()
-    
+    const {
+        first_name,
+        second_name, 
+        phone_number,
+        city_name, 
+        delivery_name,
+        depart_name,
+        headphones,
+    } = refs.orderForm.elements
     
     const name = `ФИО: ${first_name.value} ${second_name.value}`
     const tel = `Тел: ${phone_number.value}`
